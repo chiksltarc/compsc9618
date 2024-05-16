@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  h1, h2 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0062cc;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .hero-image {
+    height: 250px;
+    background-image: url("hero-image.jpg");  /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* What We Offer Styles */
+  .what-we-offer {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .offer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .icon-container {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .icon-container img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  /* Why Choose Us Styles */
+  .why-choose-us {
+    padding: 40px 0;
+  }
+  
+  .why-choose-us ul {
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .why-choose-us li {
+    margin-bottom: 10px;
+  }
+  
+  /* Testimonials Styles */
+  .testimonials {
+    padding: 40px 0;
+  }
+  
+  /* Call to Action Styles */
+  .call-to-action {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  /* Footer Styles */
+  footer {
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  footer nav {
+    margin-bottom: 10px;
+  }
+  
+  footer nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-media li {
+    margin: 0 5px;
+  }
+  
+  /* Font Awesome (Replace with your own setup) */
+  .fab {
+    font-family: Font Awesome 5 Free; /* Replace with your font family */
+  }
+  
