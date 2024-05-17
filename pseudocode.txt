@@ -1,0 +1,78 @@
+### 9618 Computer Science pseudocode
+This pseudocode appears to be a mix of Pascal-like syntax and general pseudocode conventions. 
+Data types: CHAR, STRING, INTEGER, REAL, BOOLEAN, DATE
+Indentations: 3 spaces
+Literals: 
+-Integer Written as normal in the denary system, e.g. 5, –3
+-Real Always written with at least one digit on either side of the decimal point, zeros being added if necessary, e.g. 4.7, 0.3, –4.0, 0.0
+-Char A single character delimited by single quotes e.g. ꞌxꞌ, ꞌCꞌ, ꞌ@ꞌ
+-String Delimited by double quotes. A string may contain no characters (i.e. the empty string) e.g. "This is a string", ""
+-Boolean TRUE, FALSE
+-Date This will normally be written in the format dd/mm/yyyy. 
+
+Identifiers (the names given to variables, constants, procedures and functions) are in mixed case. They can only contain letters (A–Z, a–z), digits (0–9) and the underscore character ( _ ). They must start with a letter and not a digit. Accented letters should not be used.
+
+Declarations: 
+DECLARE <identifier> : <data type>
+Declare one-dimensional array: 
+DECLARE <identifier>:ARRAY[<lower>:<upper>] OF <data type>
+Declare two-dimensional array: 
+DECLARE <identifier>:ARRAY[<lower1>:<upper1>,<lower2>:<upper2>]OF <data type>
+Declaration of enumerated type: 
+TYPE <identifier> = (value1, value2, value3, ...)
+Declaration of a pointer type: 
+TYPE <identifier> = ^<data type>
+Declaration of record composite data type: 
+TYPE <identifier1>
+   DECLARE <identifier2> : <data type>
+   DECLARE <identifier3> : <data type>
+   ...
+ENDTYPE
+Declaration of a set data type: 
+TYPE <identifier1> = SET OF <data type>
+DEFINE <identifier2> (value1, value2, value, … ) : <identifier1>
+Constants: CONSTANT <identifier> = <value>
+Assignments: <identifier> ← <value>
+Comments: // comments
+Input:
+INPUT <identifier>
+Output:
+OUTPUT <value(s)>
+Several values, separated by commas, can be output using the same command.
+Arithmetic operators: +,-,*,/,DIV,MOD
+Relational operators: >,<,>=,<=,=,<>
+String concatenations: &
+Logic operators: AND,OR,NOT
+Keywords: IF,THEN,ENDIF,CASE OF,ENDCASE,FOR,TO,NEXT,REPEAT,UNTIL,WHILE,ENDWHILE,PROCEDURE,ENDPROCEDURE,FUNCTION,RETURNS,RETURN,ENDFUNCTION,BYREF,PRIVATE,PUBLIC,CLASS,ENDCLASS,INHERITS
+
+Create an object:
+<object name> ← NEW <class name>(<param1>, <param2> ...) 
+
+Built-in functions:
+RIGHT(ThisString : STRING, x : INTEGER) RETURNS STRING returns rightmost x characters from ThisString
+LENGTH(ThisString : STRING) RETURNS INTEGER returns the integer value representing the length of ThisString
+MID(ThisString : STRING, x : INTEGER, y : INTEGER) RETURNS STRING returns a string of length y starting at position x from ThisString
+LCASE(ThisChar : CHAR) RETURNS CHAR returns the character value representing the lower-case equivalent of ThisChar
+If ThisChar is not an upper-case alphabetic character, it is returned unchanged.
+UCASE(ThisChar : CHAR) RETURNS CHAR returns the character value representing the upper-case equivalent of ThisChar
+If ThisChar is not a lower-case alphabetic character, it is returned unchanged.
+INT(x : REAL) RETURNS INTEGER returns the integer part of x
+RAND(x : INTEGER) RETURNS REAL returns a random real number in the range 0 to x (not inclusive of x
+
+Handling text files:
+The following file modes are used:
+-READ for data to be read from the file
+-WRITE for data to be written to the file. A new file will be created and any existing data in the file will be lost.
+-APPEND for data to be added to the file, after any existing data.
+OPENFILE <file identifier> FOR <file mode>
+READFILE <file identifier>, <variable>
+EOF(<file identifier>)
+WRITEFILE <file identifier>, <data>
+CLOSEFILE <file identifier>
+
+Handling random files:
+OPENFILE <file identifier> FOR RANDOM
+SEEK <file identifier>, <address>
+GETRECORD <file identifier>, <variable>
+PUTRECORD <file identifier>, <variable>
+CLOSEFILE <file identifier>
